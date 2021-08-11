@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'i-m';
+  src: url(fonts/);
+}
+@font-face {
+  font-family: 'i-b';
+  src: url();
+}
+body {
+  font-family: 'i-m';
+}
+.view {
+  max-width: 767px;
+  display: none;
+  margin: auto;
+}
+input:focus {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding: 0px 24px;
+}
+@media (max-width: 767px) {
+  .home__page {
+    padding-top: 24px;
+  }
+  .view {
+    display: block;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+  }
+  .view__list {
+    border-top: 1px solid #F4F5F7;
+    padding-top: 24px;
+    margin-top: 32px;
+  }
+  .view__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+  }
+  .view .col-6 {
+    flex-basis: 50%;
+    width: 50%;
+    max-width: 50%;
+    padding: 0px 12.5px;
+  }
+  .view .product__box {
+    margin-bottom: 32px;
+  }
+  .view .product__link {
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    color: #3E5481;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .view .product__bottom {
+    display: flex;
+    align-items: center;
+    color: #9FA5C0;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+  }
+  .view .product__cat {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .view .product__cat:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #9FA5C0;
+    margin-left: 8px;
+  }
+  .view .product__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .view .product__author--img {
+    width: 31px;
+    height: 31px;
+    border-radius: 11px;
+    background-size: cover;
+    margin-right: 8px;
+  }
+  .view .product__author--title {
+    color: #2E3E5C;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .view .product__img {
+    position: relative;
+    height: 151px;
+    border-radius: 16px;
+    background-size: cover;
+    display: flex;
+    padding: 16px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .view .product__fav {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    padding: 6px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .view .btitle {
+    font-size: 17px;
+    color: #3E5481;
+    font-family: 'i-b';
+    margin-bottom: 16px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+  }
+  .view__category--list {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .view__category--list::-webkit-scrollbar-thumb {
+    background-color: #1FCC79;
+    outline: 1px solid #1FCC79;
+  }
+  .view__category--list::-webkit-scrollbar {
+    height: 3px;
+  }
+  .view__category--item {
+    padding: 11px 24px;
+    border-radius: 32px;
+    font-size: 15px;
+    color: #9FA5C0;
+    border: 0;
+    background-color: #F4F5F7;
+    margin-right: 16px;
+  }
+  .view__category--item.active {
+    background-color: #1FCC79;
+    color: #fff;
+  }
+  .view__nav {
+    display: flex;
+    position: fixed;
+    padding: 11px 20px;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 56px rgba(0, 70, 207, 0.03);
+  }
+  .view__nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9FA5C0;
+  }
+  .view__nav a path {
+    fill: #9FA5C0;
+  }
+  .view__nav a.active {
+    color: #1FCC79;
+  }
+  .view__nav a.active path {
+    fill: #1FCC79;
+  }
+  .view__search {
+    display: flex;
+    background-color: #F4F5F7;
+    padding: 16px 24px;
+    border-radius: 32px;
+    margin-bottom: 24px;
+  }
+  .view__search button {
+    background: unset;
+    border: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+  .view__search input {
+    border: 0;
+    background: unset;
+    font-size: 15px;
+  }
+}

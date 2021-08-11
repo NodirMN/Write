@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Xodimlar ro'yhati</h3>
+    <button onclick="showModal()">Yangi xodim</button>
+
+    <div class="modal" id="modal">
+        <input type="text" placeholder="Ismi" id="ism">
+        <input type="number" placeholder="Yoshi" id="yosh">
+        <input type="date" id="sana">
+        <select id="otdel">
+            <option value="Veb ilovalar bo'limi">Veb ilovalar bo'limi</option>
+            <option value="Mobil ilovalar bo'limi">Mobil ilovalar bo'limi</option>
+            <option value="Menejment bo'limi">Menejment bo'limi</option>
+            <option value="Qo`llab-quvvatlash bo'limi">Qo`llab-quvvatlash bo'limi</option>
+        </select>
+        <button onclick="add()">Kirit</button>
+    </div>
+    <hr>
+    <table width='100%' border='1' cellspacing='0' cellpadding='5'>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Ism</th>
+                <th>Yosh</th>
+                <th>Tu'gilgan sana</th>
+                <th>Bo'lim</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

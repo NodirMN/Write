@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    top: -1000px;
+}
+.modal.active {
+    top: 10px;
+}
+.modal input,
+.modal select {
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    border:1px solid #e7e7e7;
+}
+.modal button {
+    background-color: green;
+    display: inline-block;
+    width: 150px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    border:0;
+    margin-top:5px;
+}

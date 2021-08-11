@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 31px 24px 46px 24px;
+}
+.font {
+  font-size: 18px;
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+}
+.plus:hover {
+  background-color: #9FE3E8;
+}
+.plus:hover svg path {
+  fill: #2CB932;
+}
+.task.modal {
+  top: 10px;
+}
+.task {
+  position: fixed;
+  top: -1000px;
+  transition: 0.5s;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.task .exercise {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.task .date,
+.task .member,
+.task .text,
+.task .title {
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 100%;
+}
+.task .add {
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 60px;
+  padding: 10px 60px;
+  background-color: #7ED369;
+  border-radius: 15px;
+  margin-bottom: 45px;
+}
+.header .list {
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 24px;
+}
+.header .btns {
+  display: flex;
+  justify-content: space-between;
+}
+.header .btns .done {
+  border: none;
+  background-color: #FF0000;
+  padding: 8px 24px;
+  color: #fff;
+}
+.header .btns .unfulfilled {
+  border: none;
+  color: #7ED369;
+  background-color: #fff;
+}
+.main {
+  margin-top: 59px;
+  background-color: #9FE3E8;
+  padding: 12px 15px 13px 19px;
+}
+.main .bottom,
+.main .m_text,
+.main .m_title {
+  margin-bottom: 12px;
+}
+.main .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.main.child {
+  background-color: #F4A4A9;
+}
+.plus {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  border: none;
+  background-color: #2CB932;
+  width: 62px;
+  height: 62px;
+  margin-top: 53px;
+}

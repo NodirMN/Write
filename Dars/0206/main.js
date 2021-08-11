@@ -1,0 +1,9 @@
+let app = document.getElementById('app')
+document.body.style.margin = 0
+app.textContent = 'This is title'
+app.style.backgroundColor = 'brown'
+app.style.color = 'white'
+app.style.height = '100vh'
+app.style.display = 'flex'
+app.style.justifyContent = 'center'
+app.style.alignItems = 'center'

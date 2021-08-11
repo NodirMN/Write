@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       
+
+        <title>Кредитный калькулятор</title>
+        <style>
+            #loading,
+            #result {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card card-body text-center mt-5">
+                        <div class="heading display-5 pb-3">Kredit</div>
+                        <form id="loan-form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text input-group-prepend">Kredit summasi:</span>
+                                    <input type="number" id="amount" class="form-control" placeholder="Kredit summasi:">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text input-group-prepend">Kredit foyizi:</span>
+                                    <input type="number" id="interest" class="form-control"
+                                        placeholder="Kredit foyizi:">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="number" id="years" class="form-control"
+                                    placeholder="Kredit muddati">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="Hisoblash" class="btn btn-dark btn-block">
+                            </div>
+                        </form>
+                      
+                      
+                        <div id="result" class="pt-4">
+                            <h5>To`lov, so`m
+</h5>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text input-group-prepend">Ежемесячный платеж</span>
+                                    <input type="number" id="monthly-payment" class="form-control" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text input-group-prepend">Итоговый платеж</span>
+                                    <input type="number" id="total-payment" class="form-control" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text input-group-prepend">Переплата</span>
+                                    <input type="number" id="total-interest" class="form-control" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+
+    </html>
+</body>
+</html>

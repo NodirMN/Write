@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+button:hover {
+    cursor: pointer;
+}
+.task__list {
+    max-width: 500px;
+    margin: auto;
+}
+.task__box button:before, 
+.task__box button:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.task__box button:before{
+    transform: rotate(-45deg);
+}
+.task__box button {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 20px;
+    background:unset;
+    border:0;
+    height: 20px;
+}
+.task__box {
+    padding: 10px;
+    position: relative;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #F4A4A9;
+}
+.task__box:nth-child(odd){
+    background-color: #9FE3E8;
+    color: #000;
+}
+.task__box:nth-child(odd) button:before,
+.task__box:nth-child(odd) button:after{
+    background-color: #000;
+}
+.task__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.task__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.task__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+.add {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    border:0;
+    background-color: rgb(21, 172, 134);
+}
+.modal {
+    position: fixed;
+    max-width: 400px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    top: -1000px;
+    left: 0;
+    transition: 0.5s;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.modal.show {
+    top: 100px;
+}
+.modal textarea,
+.modal select,
+.modal input {
+    display: block;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border:1px solid #e7e7e7;
+    margin-bottom: 15px;
+}
+.modal textarea {
+    height: 200px;
+}
+.modal label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.modal__title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.modal button.danger {
+    background-color: red;
+}
+.modal button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    color: #fff;
+    border:0;
+    background-color: rgb(31, 197, 114);
+}

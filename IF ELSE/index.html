@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        console.log('Hello World'); //string --satirli tip
+        console.log(13); //integer --butun son
+        console.log(3.6); //float --haqiqiy son
+        console.log(false); //boolean --mantiqiy tip
+        console.log(null); //null --qiymat yo'q
+        console.log({
+            title: "Nodir",
+            bdate: 1994
+        }); //object --obyekt
+        console.log(["Nodir", "Begzod", "Abdulloh"]); //array -- masssiv list tip
+
+
+
+
+        ///////////////////////////
+        //O'zgaruvchi
+        let a = 13
+        let human = 'Nodir'
+        console.log('Ismi', human, 'Yosh:', a); ///yoshi  13
+        console.log('Ismi: ' + human + ' Yosh:' + a); ///
+        console.log(`Ismi:${human+'bek'} Yosh:${a+1}`); /// string chiqaradi ${+-*} hammasi string
+
+
+        //////////////////////////
+        let test = 'teast' //string
+        let Test = 'teast1'
+        let _car = true //boolean
+        let $money = 13 //integer
+        let a$1 = 12.4 //float
+        let humanList = ['Nodir', 'Sherzod', 'Lola'] // massiv
+        console.log(humanList);
+        console.log(humanList[2]);
+
+
+        //////////////////////////
+        let car = { //object
+            color: 'red',
+            year: 2021,
+            title: null
+
+        }
+        console.log(car.title);
+        car.title = 'GM' //car va titilga qiymat berddik   
+        console.log(car);
+        console.log(car.color); // car.year qoysa bo'ladi
+        //////////////////////
+
+        let aSon = 4
+        let bSon = 7
+        console.log('Natija:', aSon + bSon);
+        console.log('Natija:', aSon * bSon);
+        console.log('Natija:', aSon / bSon);
+        console.log('Natija:', bSon % aSon); //qoldiq qoladi
+
+        ////////if///////////
+        let yosh = 22
+        if (yosh >= 18) {
+            console.log('Voyaga yetgan');
+        } else {
+            console.log('Aylanib kel');
+        };
+        //////////////////////////////////
+        let d = 'PH'
+        if (d == 'Python') {
+            console.log('Django');
+        } else if (d == 'JavaSckript') {
+            console.log('Nod.Js');
+        } else if (d == 'PHP') {
+            console.log('Laravel');
+        } else {
+            console.log('Notogri');
+        }
+
+////////////////////////////////////
+
+let p = 14
+if (p%2 == 0){
+    console.log('2 ga karrali');
+} else if ( p % 3 == 0){
+    console.log('3 ga karrali');
+} else if (p % 5 == 0){
+    console.log('5 ga karrali');
+}else{
+    console.log('Aylanib keling');
+}
+
+
+    </script>
+
+</body>
+
+</html>

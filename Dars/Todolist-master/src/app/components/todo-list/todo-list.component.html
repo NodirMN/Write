@@ -1,0 +1,16 @@
+<div @todoListInit cdkDropList class="todo-list"
+     (cdkDropListDropped)="dropTodo($event)">
+    <todo-item
+        *ngFor="let todo of todoList$ | async; trackBy: itemTrackBy"
+        @todoAnimate cdkDrag
+        [cdkDragDisabled]="isMobile$ | async"
+        [todo]="todo"
+        (checked)="editTodo($event)"
+        (edit)="openDialog($event)"
+        (delete)="deleteTodo($event)"
+    ></todo-item>
+</div>
+
+<button mat-button class="todo-add" (click)="openDialog()">
+    <mat-icon>add</mat-icon>
+</button>

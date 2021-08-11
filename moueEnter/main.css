@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+ul a {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.pict {
+    height: 400px;
+    width: 300px;
+    background-color: #ccc;
+    background-size: cover;
+}

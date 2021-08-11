@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Xodimlar ro'yhati</h3>
+    <button onclick="showModal()">Yangi xodim</button>
+
+    <div class="modal" id="modal">
+        <input type="text" placeholder="Ismi" id="ism">
+        <input type="number" placeholder="Yoshi" id="yosh">
+        <input type="date" id="sana">
+        <select id="otdel">
+            <option value="Veb ilovalar bo'limi">Veb ilovalar bo'limi</option>
+            <option value="Mobil ilovalar bo'limi">Mobil ilovalar bo'limi</option>
+            <option value="Menejment bo'limi">Menejment bo'limi</option>
+            <option value="Qo`llab-quvvatlash bo'limi">Qo`llab-quvvatlash bo'limi</option>
+        </select>
+        <button onclick="add()">Kirit</button>
+    </div>
+     <div class="list">
+
+     </div>
+     <button class="push" onclick="showModal()"><svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+             <circle cx="31" cy="31" r="31" fill="#2CB932" />
+             <path
+                 d="M33.1992 28.6738H39.5449V33.2617H33.1992V40.4336H28.3652V33.2617H22.002V28.6738H28.3652V21.8008H33.1992V28.6738Z"
+                 fill="white" />
+         </svg>
+     </button>
+     </div>
+     </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

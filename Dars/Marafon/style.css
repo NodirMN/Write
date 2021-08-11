@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'g-b';
+  src: url(fonts/gilroy-bold.ttf);
+}
+
+@font-face {
+  font-family: 'g-m';
+  src: url(fonts/gilroy-medium.ttf);
+}
+
+@font-face {
+  font-family: 'g-r';
+  src: url(fonts/gilroy-regular.ttf);
+}
+
+@font-face {
+  font-family: 'h-b';
+  src: url(fonts/HKGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'h-r';
+  src: url(fonts/HKGrotesk-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'g-sb';
+  src: url(fonts/HKGrotesk-SemiBold.ttf);
+}
+
+body {
+  background-color: #E5E5E5;
+    max-width:768px;
+}
+
+.container {
+width: 414px;
+  background-color: #FFFFFF;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  padding-top: 58px;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.locotion {
+  display: flex;
+  justify-content: center;
+}
+
+.loc {
+  padding-left: 9px;
+}
+
+
+
+input {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+  border: 0;
+  border-radius: 15px;
+     padding: 16px 206px 15px 17px;
+
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 21px;
+  padding-top: 24px;
+}
+
+
+.title__price {
+
+  justify-content: space-between;
+}
+
+.title .off {
+  font-size: 24px;
+}
+
+.title .all {
+  font-size: 16px;
+  color: #53B175;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+.row {
+  overflow: auto;
+  display: flex;
+
+}
+
+.col-5 {
+  max-width: 376px;
+  margin-left: 15px;
+
+  border: 1px solid black;
+  border-radius: 17px;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.paint {
+  padding: 33px 47px 11px 22px;
+}
+
+button {
+  border: 0;
+  border-radius: 17px;
+  background-color: #fff;
+}
+
+ .params {
+  padding: 15px;
+}
+.grocer{
+  display: flex;
+
+}
+.col-3 {
+ margin-right: 14px;
+ margin-left: 24px;
+max-width: 248px;
+max-height: 105px;
+  flex-basis: 50%;
+
+}
+
+.adivice {
+  border-radius: 20px;
+  background-color: #F8A44C;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+ padding-right: 12px;
+} 
+.grocer{
+  padding-bottom: 20px;
+}
+
+.menu__item{
+  padding-top: 40px;
+     padding-right: 13px;
+     padding-left: 20px;
+     padding-bottom: 34px;
+     
+}

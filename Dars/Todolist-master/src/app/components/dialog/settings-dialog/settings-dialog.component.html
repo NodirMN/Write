@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Settings</h1>
+
+<div mat-dialog-content>
+    <mat-slide-toggle
+        [disabled]="!user"
+        [checked]="user && (synchronize$ | async)"
+        (change)="onSynchronizeChange($event.checked)">
+        Synchronize all devices
+    </mat-slide-toggle>
+
+    <mat-slide-toggle
+        [checked]="(theme$ | async) === 'dark'"
+        (change)="onThemeChange(!$event.checked ? 'light' : 'dark')">
+        {{theme$ | async | titlecase}} theme
+    </mat-slide-toggle>
+</div>

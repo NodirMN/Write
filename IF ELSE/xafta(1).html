@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = 5
+        if ( day==1)
+                console.log('Birinchi xafta: dushanba');
+        else if ( day==2 ){
+            console.log('Ikkinchi xafta : seshanba');
+        }
+        else if ( day==3 ){
+            console.log('Uchinchi xafta: chorshanba');
+        }
+        else if ( day==4 ){
+            console.log('To`rtinchi xafta: payshanba');
+        }
+        else if ( day==5 ){
+            console.log('Beshinchi xafta: juma');
+        }
+        else if ( day==6 ){
+            console.log('Oltinchi xafta: shanba');
+        }
+        else if ( day==7 ){
+            console.log('Yettinchi hafta: yakshanba');
+        }
+        else{
+            console.log('Bunday hafta yo`q');
+        }
+
+        let weekDay=['Dushanba', 'Seshanba', 'Chorshanba', 'Payshanba', 'Juma','Shanba','Yakshanba']
+        if(day<=7 && day!==0){
+            console.log(weekDay[day-1]);
+        } else {
+            console.log('Bunday hafta yo`q');
+        }
+
+
+    </script>
+</body>
+</html>

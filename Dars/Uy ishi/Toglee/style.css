@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+@font-face {
+    font-family:'r-r';
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:'r-b';
+    src: url(fonts/Roboto-Bold.ttf);
+}
+button{
+    cursor: pointer;
+}
+.card {
+    height: 896px;
+    width: 414px;
+    margin: 40px auto;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 59px;
+}
+.title{
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-family: 'r-b';
+}
+.abaut{
+     padding-bottom: 8px;
+}
+.day{
+      font-size: 18px;
+      font-family: 'r-b';
+}
+.name{
+    font-size: 18px;
+    font-family: 'r-b';
+}
+.main {
+    padding: 12px 13px;
+    background-color: #9FE3E8;
+    width: 369px;
+    margin: auto;
+}
+.asst.main :nth-child(even) {
+    padding: 12px 13px;
+    background-color: #e89f9f;
+    width: 369px;
+    margin: auto;
+}
+.ass{
+
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    background-color: #E5E5E5;
+}
+ .do{
+     font-size: 12px;
+     font-family: 'r-b';
+    padding: 8px 25px;
+    background-color: #ffffff;
+    border: 0;
+}
+ .do:hover{
+     background-color: #FF0000;
+ }
+.dot{
+    font-size: 12px;
+    font-family: 'r-b';
+    border: 0;
+    background: #fff;
+}
+.dot:hover{
+    padding: 8px 25px;
+    background-color: green;
+}
+
+ .push{
+     border:0;
+     border-radius: 50%;
+    margin: 53px 176px;
+    
+}
+h3{
+    padding-bottom: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 31px;
+        font-size: 24px;
+        font-family: 'r-b';
+        }
+
+.push{
+    display: flex;
+}
+
+.modal {
+   height: 440px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 371px;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    top: -1000px;
+}
+.modal.active {
+    top: 110px;
+}
+.modal input,
+.modal select {
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    border:1px solid #e7e7e7;
+}
+.modal button {
+    font-family: 'r-r';
+    color: #000000;
+  
+     background: #7ED369;
+    display: inline-block;
+
+    border-radius: 15px;
+ 
+    padding: 10px 67px;
+    border:0;
+    margin-top:5px;
+}

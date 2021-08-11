@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>{{isRegistration ? 'Create new account' : 'Sign in to TodoList'}}</h1>
+
+<form [formGroup]="form">
+    <div mat-dialog-content>
+        <mat-form-field>
+            <input [emailValidator]="isRegistration"
+                   matInput type="email"
+                   placeholder="Email"
+                   formControlName="email"/>
+
+            <mat-error *ngIf="form.get('email').hasError('code')">
+                {{form.get('email').errors.message}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input passwordValidator
+                   matInput type="password"
+                   placeholder="Password"
+                   formControlName="password"/>
+
+            <mat-error *ngIf="form.get('password').hasError('code')">
+                {{form.get('password').errors.message}}
+            </mat-error>
+        </mat-form-field>
+    </div>
+
+    <div mat-dialog-actions>
+        <button mat-button
+                *ngIf="isRegistration"
+                [disabled]="!form.valid"
+                (click)="onCreate()">
+            Create
+        </button>
+
+        <button mat-button
+                *ngIf="!isRegistration"
+                [disabled]="!form.valid"
+                (click)="onSignIn()">
+            Sign in
+        </button>
+    </div>
+</form>

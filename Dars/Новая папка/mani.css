@@ -1,0 +1,570 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: 'f-b';
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'f-i';
+    src: url(../fonts/Rubik-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'f-l';
+    src: url(../fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: 'f-m';
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'f-r';
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1437px;
+    margin: 0px auto;
+}
+
+header .container .top .btn {
+    justify-content: space-between;
+    padding-top: 9px;
+    padding-bottom: 20px;
+
+}
+
+header .container .top .btn a:hover svg {
+    transform: scale(1.1);
+}
+
+button {
+    cursor: pointer;
+}
+
+
+header .btn {
+    display: flex;
+    align-items: center;
+
+}
+
+header .set span {
+    font-family: 'f-r';
+    display: block;
+    text-align: end;
+    font-size: 10px;
+}
+
+header .col1 span {
+    font-family: 'f-r';
+    display: block;
+    align-items: center;
+    text-align: right;
+    font-size: 10px;
+}
+
+header .col2 span {
+    font-family: 'f-r';
+    display: block;
+    align-items: center;
+    text-align: right;
+    font-size: 10px;
+    color: #000000;
+}
+
+header .massage span {
+
+    font-family: 'f-r';
+    display: block;
+    align-items: center;
+    text-align: end;
+    font-size: 10px;
+}
+
+
+header .bottom button {
+    padding: 8px 46px 10px 37px;
+    border: 0px;
+    background-color: #CEAB8C;
+    color: #FFFFFF;
+    margin-right: 16px;
+}
+
+header .bottom button:hover {
+    background-color: #b68d69;
+
+}
+
+header .button .text {
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    margin-right: 45px;
+    margin-left: 10px;
+}
+
+
+header .button {
+    display: flex;
+    align-items: center;
+
+}
+
+header .button ul {
+    display: flex;
+    font-size: 16px;
+
+}
+
+header .button a {
+    color: #000000;
+    margin-right: 56px;
+    padding: 20px 0;
+
+}
+
+header .button a:hover {
+    color: #a17650;
+    transition: 0.3;
+
+}
+
+/* SLIDER */
+.slider .item {
+    height: 500px;
+    margin-top: 14px;
+}
+
+.slider .container {
+    position: relative;
+}
+
+.slider button {
+    padding: 11px 16px 11px 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    border: 0;
+}
+
+.slider button:hover {
+    background-color: #e6d6d6;
+}
+
+.text .title {
+    padding-top: 89px;
+    max-width: 50%;
+    color: #3B3B3B;
+    font-family: 'f-r';
+    font-size: 48px;
+
+}
+
+.text .title strong {
+
+    font-family: 'f-b';
+}
+
+.text .title p {
+    margin-top: 10px;
+    max-height: 84px;
+    font-size: 18px;
+    font-family: 'f-r';
+    margin-bottom: 109px;
+}
+
+.text .title p::before {
+    width: 62px;
+    height: 0;
+    background-color: #000000;
+}
+
+.text .title a {
+    font-size: 18px;
+    color: #FF0D19;
+}
+
+.text .title a:hover {
+    color: #f3525a;
+}
+
+.text .title ::before {
+    width: 70px;
+    height: 20px;
+    color: #000000;
+}
+
+/* TEXNIK */
+.texno .container .title {
+    margin-right: 48px;
+    align-items: center;
+    width: 75%;
+    font-size: 32px;
+    color: #3B3B3B;
+    font-family: 'f-r';
+}
+
+.texno .text2 {
+    padding-top: 40px;
+    display: flex;
+}
+
+.texno .container .text2 span {
+
+    font-family: 'f-b';
+    color: #FF0D19;
+}
+
+.texno .texts {
+    font-size: 16px;
+    font-family: 'f-i';
+}
+
+/* COL */
+.row {
+    margin-top: 37px;
+    display: flex;
+}
+
+.col-3 {
+    padding-right: 14px;
+    flex-basis: 25%;
+    display: flex;
+}
+
+.img {
+    width: 348px;
+    height: 216px;
+}
+
+
+.buts {
+    margin: 0 auto;
+    height: 52px;
+    align-items: center;
+    max-width: 90%;
+    display: flex;
+    background-color: #CEAB8C;
+    color: #FFFFFF;
+    margin-top: -24px;
+    justify-content: center;
+}
+
+/* ФРАКЦИОННОЕ ОМОЛОЖЕНИЕ. ЛАЗЕР */
+.vedush {
+    padding-top: 135px;
+    padding-bottom: 65px;
+}
+
+.vedush .tex {
+    color: #FF0D19;
+    font-size: 32px;
+    font-family: 'f-r';
+}
+
+.vedush img {
+    height: 220px;
+    width: 227px;
+}
+
+.vedush .col-6 {
+    padding-right: 20px;
+}
+
+.vedush a {
+    align-items: center;
+    font-family: 'f-r';
+    font-size: 18px;
+    color: #3B3B3B;
+}
+
+.vedush .rub {
+    background-color: #CEAB8C;
+    width: 678px;
+    padding-left: 41px;
+    padding-right: 21px;
+    padding-bottom: 32px;
+
+}
+
+.vedush .years {
+    font-size: 32px;
+    font-family: 'f-r';
+    color: #FFFF;
+    padding-top: 35px;
+    padding-bottom: 21px;
+}
+
+.vedush p {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'f-l';
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.vedush .rub .ruby {
+    padding-bottom: 32px;
+    font-family: 'f-r';
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.cosmk {
+
+    background-color: #F9F9F9;
+    margin: auto;
+    width: 953px;
+    padding: 33px 52px 40px 37px;
+}
+
+.cosmk .buty {
+    text-align: left;
+    font-size: 32px;
+    font-family: 'f-b';
+    padding-bottom: 18px;
+}
+
+.cosmk .butyf {
+    text-align: left;
+    font-family: 'f-r';
+    font-size: 18px;
+}
+
+.cosmk strong {
+    font-size: 18px;
+    font-family: 'f-r';
+}
+
+
+.prog {
+    padding-top: 60px;
+    padding-bottom: 84px;
+
+}
+
+.prog .container {
+    background-color: #F9F9F9;
+}
+
+.prog .programs {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'f-r';
+
+}
+
+.prog .programs strong {
+    font-family: 'f-b';
+}
+
+.prog .row {
+    padding-top: 49px;
+    padding-left: 64px;
+    padding-right: 36px;
+    padding-bottom: 56px;
+    display: flex;
+}
+
+.prog .col-4 {
+    padding-left: 78px;
+    width: 33.33%;
+}
+
+.col-4 .gastra1 {
+    font-size: 24px;
+    font-family: 'f-m';
+    padding-bottom: 22px;
+}
+
+.col-4 .shirok {
+    font-size: 14px;
+    font-family: 'f-r';
+    text-align: left;
+}
+
+.col-4 .pod {
+    color: red;
+}
+
+.spetsalist .title {
+    font-family: 'f-r';
+    font-size: 36px;
+    text-align: center;
+}
+
+.spetsalist .xas {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-family: 'f-r';
+    padding-bottom: 32px;
+}
+
+.carts {
+    padding-right: 10px;
+    display: inline-flex;
+    border: 1px solid #E2E2E2;
+}
+
+.row1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.col-61 {
+
+    flex-basis: 50%;
+    display: inline-flex;
+    padding-bottom: 15px;
+
+}
+
+.row1 .title1 {
+    font-size: 18px;
+    font-family: 'f-r';
+    color: #3B3B3B;
+    padding-top: 20px;
+    padding-bottom: 16px;
+
+
+}
+
+.row1 .since {
+    font-size: 14px;
+    font-family: 'f-i';
+    padding-bottom: 16px;
+    text-align: left;
+}
+
+.row1 .straf {
+    font-family: 'f-r';
+    font-size: 16px;
+    padding-bottom: 27px;
+
+}
+
+.row1 .writ {
+    font-family: 'f-r';
+    font-size: 14px;
+    color: #FF0D19;
+
+}
+
+.center {
+    padding-top: 40px;
+    font-size: 18px;
+
+    font-family: 'f-b';
+    text-decoration-line: underline;
+    padding-bottom: 96px;
+}
+
+.center a {
+    color: #FF0D19;
+}
+
+
+/* Footer */
+footer .up {
+    display: inline-flex;
+}
+
+footer .row2 {
+    display: flex;
+}
+
+footer .col-33 {
+    flex-basis: 25%;
+    padding-right: 43px;
+}
+
+footer .poco {
+    padding-top: 16px;
+    font-family: 'f-r';
+    font-size: 16px;
+}
+
+footer .uslu {
+    font-size: 24px;
+    padding-bottom: 23px;
+}
+
+footer ul {
+    padding-right: 37px;
+
+}
+
+footer ul a {
+    font-size: 16px;
+    font-family: 'f-r';
+    color: #3B3B3B;
+
+}
+
+
+footer .helss .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'f-r';
+    color: #3B3B3B;
+    padding-top: 68px;
+
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.header {
+    background: #ccc;
+}
+
+.header__content {
+    padding: 5px;
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 25px;
+    margin: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main__content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1407px;
+}
+.theme-button {
+    position: fixed;
+    right: 5px;
+    bottom: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}

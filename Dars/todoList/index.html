@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TodoList</h1>
+    <div class="task__list">
+        
+    </div>
+    <div class="modal">
+        <div class="modal__title">Yangi topshiriq</div>
+        <label for="title">Topshiriq sarlavhasi</label>
+        <input type="text" id="title">
+        <label for="text">Topshiriq matni</label>
+        <textarea type="text" id="text"></textarea>
+        <label for="date">Topshiriq muddati</label>
+        <input type="date" id="date">
+        <label for="author">Mas'ul shaxs</label>
+        <select id="author">
+            <option value="Tohirov Ahmad">Tohirov Ahmad</option>
+            <option value="Mansurova Lola">Mansurova Lola</option>
+            <option value="To`lkinov Aziz">To`lkinov Aziz</option>
+            <option value="Qodirov Suhrob">Qodirov Suhrob</option>
+            <option value="Sardorova Odila">Sardorova Odila</option>
+        </select>
+        <div class="task__bottom">
+            <button onclick="showModal()" class="danger">Bekor qilish</button>
+            <button onclick="add()">Qo'shish</button>
+        </div>
+    </div>
+    <button class="add" onclick="showModal()">+</button>
+    <script src="app.js"></script>
+</body>
+</html>

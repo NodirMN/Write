@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="splide.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="slider splide">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="slider__item splide__slide "
+                    style="background-image: url(Guardians_of_the_Galaxy_442713.jpg);">
+                    <div class="slider__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                        repellendus nihil et natus quaerat exercitationem quasi id commodi porro eos, excepturi magni
+                        quam. Unde tenetur nam facilis vero reiciendis voluptatum!</div>
+                </div>
+                <div class="slider__item splide__slide "
+                    style="background-image: url(Guardians_of_the_Galaxy_Vol._2_Chris_Pratt_Zoe_523613_2880x1800.jpg);">
+                    <div class="slider__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                        repellendus nihil et natus quaerat exercitationem quasi id commodi porro eos, excepturi magni
+                        quam. Unde tenetur nam facilis vero reiciendis voluptatum!</div>
+                </div>
+                <div class="slider__item splide__slide "
+                    style="background-image: url(Guardians_of_the_Galaxy_Vol._2_Zoe_Saldana_Chris_523865_6075x3975.jpg);">
+                    <div class="slider__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                        repellendus nihil et natus quaerat exercitationem quasi id commodi porro eos, excepturi magni
+                        quam. Unde tenetur nam facilis vero reiciendis voluptatum!</div>
+                </div>
+                <div class="slider__item splide__slide "
+                    style="background-image: url(Guardians_of_the_Galaxy_Vol._2_Zoe_Saldana_Chris_523865_6075x3975.jpg);">
+                    <div class="slider__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                        repellendus nihil et natus quaerat exercitationem quasi id commodi porro eos, excepturi magni
+                        quam. Unde tenetur nam facilis vero reiciendis voluptatum!</div>
+                </div>
+                <div class="slider__item splide__slide "
+                    style="background-image: url(Guardians_of_the_Galaxy_Vol._2_Zoe_Saldana_Chris_523865_6075x3975.jpg);">
+                    <div class="slider__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                        repellendus nihil et natus quaerat exercitationem quasi id commodi porro eos, excepturi magni
+                        quam. Unde tenetur nam facilis vero reiciendis voluptatum!</div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="splide.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.slider',{
+                type: 'loop',
+                // speed: 2000,
+                perPage:3,
+                // perMove:2,
+                focus : 'center',
+                autoplay : true,
+                interval : 1500,
+            }).mount();
+        });
+    </script>
+</body>
+
+</html>

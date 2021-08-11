@@ -1,0 +1,5 @@
+height: 896px;
+width: 414px;
+left: -207px;
+top: -449px;
+border-radius: 0px;

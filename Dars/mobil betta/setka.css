@@ -1,0 +1,49 @@
+.card{
+    width: 414px;
+    margin: 40px auto;
+    background-color: #fff;
+    overflow: hidden;
+    
+}
+.card .img{
+    height: 240px;
+    background-size:cover ;
+
+}
+body{
+    background-color: #E5E5E5;
+}
+.card .body{
+    padding: 33px 13px 33px 33px;
+}
+.card .title{
+    font-size: 21px;
+    color: black;
+    text-decoration: none;
+    line-height: 31px;
+    display: block;
+}
+.card .text{
+    color: #7d7987;
+    height: 84px;
+    font-size: 16px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.card .more{
+    font-size: 17px;
+    color: #4089ed;
+    line-height: 70px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card .more svg{
+    height: 19px;
+    margin-left: 10px;
+    
+}
+.card .more svg path{
+    fill:#4089ed
+}

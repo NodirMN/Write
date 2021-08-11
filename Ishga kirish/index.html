@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Xodimlar ro'yhati</h2>
+    <hr>
+        <div>
+            <label><b>Ism-sharifi</b><br><input type="text" id="ism"></label>
+        </div>
+        <div>
+            <label><b>Tug'ilgan sanani</b><br><input type="date" id="tug"></label>
+        </div>
+        <div>
+            <b>Jinsi</b> <br>
+            <label><input type="radio" id="erkak" name="gender" value="Erkak">Erkak</label>
+            <label><input type="radio" id="ayol" name="gender" value="Ayol">Ayol</label>
+        </div>
+        <div>
+            <b>Qaysi dasturlash tili bilasiz?</b><br>
+            <label><input type="checkbox" name="lang" id="js" value="js"> JS</label>
+            <label><input type="checkbox" name="lang" id="python" value="python"> Python</label>
+            <label><input type="checkbox" name="lang" id="php" value="php"> PHP</label>
+        </div>
+        <div>
+            <b>Qaysi bo'limga ishga kiryapdi?</b><br>
+            <select id="depart">
+                <option value="null"></option>
+                <option value="Veb dasturlar bo`limi">Veb dasturlar bo`limi</option>
+                <option value="Mobile dasturlar bo`limi">Mobile dasturlar bo`limi</option>
+                <option value="Menejment bo`limi">Menejment bo`limi</option>
+                <option value="Qo`llab-quvvatlash bo`limi">Qo`llab-quvvatlash bo`limi</option>
+            </select>
+        </div>
+        <button onclick='send()'>Tizimga jo'natish</button>
+        <div id="info" style="color:red;display: none;">
+            Hamma maydon to'ldirilmadi
+        </div>
+    <hr>
+        <table border='1' width='100%' cellspacing='0' cellpadding='5'>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Ism-sharifi</th>
+                    <th>Tug'ilgan sanasi</th>
+                    <th>Jinsi</th>
+                    <th>Dasturlash tillari</th>
+                    <th>Bo'lim</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    <hr>
+
+    <script src="ap.js"></script>
+</body>
+</html>
